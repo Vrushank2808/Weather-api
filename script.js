@@ -1,4 +1,3 @@
-// You can store this API key safely in environment variables if you're using a backend
 const apiKey = 'ccd0af738ca3c1cbd35a366c56130660'; 
 
 fetch('cities.json')
@@ -32,7 +31,6 @@ document.getElementById('getWeatherBtn').addEventListener('click', () => {
     }
 });
 
-// Function to get weather data from OpenWeatherMap API
 function getWeather(city) {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
