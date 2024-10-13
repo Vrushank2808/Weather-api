@@ -1,5 +1,3 @@
-Here is a more detailed README for your Weather API repository:
-
 ---
 
 # Weather API 🌤️
@@ -67,5 +65,3 @@ const apiKey = 'YOUR_API_KEY';
 This project is open-source and available under the MIT License.
 
 ---
-
-Once you have a screenshot, you can save it in your repository and reference it in the `Screenshots` section.
