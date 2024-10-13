@@ -1,0 +1,155 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+#weatherDetails {
+    display: none;
+}
+
+h2, p {
+    margin: 5px 0;
+} */
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #83a4d4, #b6fbff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 30px;
+}
+
+/* Dropdown Styling */
+select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+select:hover {
+    border-color: #4a90e2;
+}
+
+/* Button Styling */
+button {
+    background: linear-gradient(45deg, #4a90e2, #9013fe);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    outline: none;
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #3a78d0, #7c0fd9);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Weather Info Styling */
+.weather-info {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #555;
+}
+
+.weather-info h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.weather-info p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Hide weather details by default */
+#weatherDetails {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Add fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
